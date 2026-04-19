@@ -12,7 +12,13 @@
 #define I2C_MASTER_NUM       I2C_NUM_0
 #define I2C_MASTER_FREQ_HZ   100000
 
+// Error return values
+#define TRUE    1
+#define FALSE   0
 
+ // declare lis2dh12 MEMS sensor init and read function (devined in LISDH12.cpp)
+extern void lis2dh12_init(void); 
+extern void read_accelerometer(int16_t *x); 
 
 void setup() {
     Serial.begin(115200);

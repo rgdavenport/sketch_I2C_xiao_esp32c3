@@ -41,7 +41,7 @@ void loop() {
     delay(5000);
 }
 
-// --- Helper Functions ---
+ //--- Helper Functions ---
 
 void check_sensor() {
     uint8_t reg = REG_WHO_AM_I;

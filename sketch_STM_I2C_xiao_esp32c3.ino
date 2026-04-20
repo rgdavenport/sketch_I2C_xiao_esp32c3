@@ -22,7 +22,7 @@ extern void read_accelerometer(int16_t *x);
 
 void setup() {
     Serial.begin(115200);
-    while(!Serial);
+    delay(1000);  //was  while(!Serial); 
 
     // 1. Initialize Driver
     i2c_config_t conf = {
